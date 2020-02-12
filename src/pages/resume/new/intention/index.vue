@@ -36,7 +36,7 @@
 
     </form>
     <view class="resume-footer">
-      <van-button type="info" round size="large">下一步</van-button>
+      <van-button type="info" round size="large" @click="onClickNextBtn">下一步</van-button>
     </view>
   </main>
 </template>
@@ -60,9 +60,15 @@
     methods: {
       onClickNav ({ target }) { },
 
-      onClickItem ({ target }) { }
+      onClickNextBtn ({ target }) {
+        mpvue.navigateTo({ url: `/pages/resume/new/education/main` })
+      }
     },
 
     created () { }
   }
 </script>
+
+<style lang="less">
+  @import "../style.less";
+</style>

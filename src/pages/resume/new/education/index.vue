@@ -32,7 +32,7 @@
         <van-cell
           title="入学时间"
           is-link
-          :value="data.visitorExperienceList.length ? '请选择' : '请添加'"
+          :value="data.visitorExperienceList ? '请选择' : '请添加'"
           link-type="navigateTo"
           url="/pages/dashboard/index"
         />
@@ -49,7 +49,7 @@
 
     </form>
     <view class="resume-footer">
-      <van-button type="info" round size="large">下一步</van-button>
+      <van-button type="info" round size="large" @click="onClickNextBtn">下一步</van-button>
     </view>
   </main>
 </template>
@@ -71,7 +71,9 @@
     },
 
     methods: {
-      onClickNav ({ target }) { },
+      onClickNextBtn ({ target }) {
+        mpvue.navigateTo({ url: `/pages/resume/new/experience-new/main` })
+      },
 
       onClickItem ({ target }) { }
     },
@@ -80,4 +82,6 @@
   }
 </script>
 
-
+<style lang="less">
+  @import "../style.less";
+</style>
