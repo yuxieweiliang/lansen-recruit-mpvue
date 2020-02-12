@@ -102,7 +102,9 @@
     },
 
     methods: {
-      onClickNav ({ target }) { },
+      onClickNav ({ target }) {
+        mpvue.navigateTo({ url: `/pages/information/main` })
+      },
 
       onClickItem ({ target }) { }
     },
@@ -111,3 +113,6 @@
   }
 </script>
 
+<style lang="less">
+  @import "../style.less";
+</style>

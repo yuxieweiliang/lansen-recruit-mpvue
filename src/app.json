@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/resume/new/main",
-    "pages/resume/new/intention/main",
-    "pages/resume/new/education/main",
     "pages/resume/new/experience-new/main",
+    "pages/resume/new/education/main",
+    "pages/resume/new/intention/main",
     "pages/intention/main",
     "pages/user/main",
     "pages/index/main",

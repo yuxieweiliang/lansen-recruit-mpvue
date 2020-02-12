@@ -90,7 +90,7 @@
 
     </form>
     <view class="resume-footer">
-      <van-button type="info" round size="large">下一步</van-button>
+      <van-button @click="onClickNextBtn" type="info" round size="large">下一步</van-button>
     </view>
   </main>
 </template>
@@ -99,7 +99,7 @@
   import LsRadioGroup from './LsRadioGroup'
 
   export default {
-    name: 'resume-new',
+    name: 'new',
     components: {
       LsRadioGroup
     },
@@ -116,8 +116,9 @@
 
       },
 
-      onClickItem ({ target }) {
-        mpvue.navigateTo({ url: `/pages/intention/main` })
+      onClickNextBtn ({ target }) {
+        console.log('-------')
+        mpvue.navigateTo({ url: `/pages/resume/new/intention/main` })
       }
     },
 
