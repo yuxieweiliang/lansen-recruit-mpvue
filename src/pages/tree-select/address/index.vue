@@ -14,8 +14,8 @@
 </template>
 
 <script>
-  import * as utils from '../../utils'
-  import address from '../../../static/js/address'
+  import * as utils from '../../../utils'
+  import address from '../../../../static/js/address'
 
   export default {
     data () {

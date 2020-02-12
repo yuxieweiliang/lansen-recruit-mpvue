@@ -40,59 +40,6 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 
 
-
-  {
-    "pages": [
-      "pages/cooperation/main",
-      "pages/cooperation/address/main",
-      "pages/agreement/main",
-      "pages/about-lansen/main",
-      "pages/index/main"
-    ],
-    "window": {
-      "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#fff",
-      "navigationBarTitleText": "WeChat",
-      "navigationBarTextStyle": "black"
-    },
-    "tabBar": {
-      "color": "#999",
-      "backgroundColor": "#fafafa",
-      "selectedColor": "#333",
-      "borderStyle": "white",
-
-      "list": [{
-                 "text": "首页",
-                 "pagePath": "pages/index/main",
-                 "iconPath": "static/tabs/home.png",
-                 "selectedIconPath": "static/tabs/home-active.png"
-               }, {
-                 "text": "订单",
-                 "pagePath": "pages/about-lansen/main",
-                 "iconPath": "static/tabs/orders.png",
-                 "selectedIconPath": "static/tabs/orders-active.png"
-               }],
-
-      "items": [{
-                  "name": "首页",
-                  "pagePath": "pages/index/main",
-                  "icon": "static/tabs/home.png",
-                  "activeIcon": "static/tabs/home-active.png"
-                }, {
-                  "name": "订单",
-                  "pagePath": "pages/about-lansen/main",
-                  "icon": "static/tabs/orders.png",
-                  "activeIcon": "static/tabs/orders-active.png"
-                }],
-      "position": "bottom"
-    }
-  }
-
-
-
-
-
-
 应聘:
   需求：城市、薪资、学历、岗位
   急招：
@@ -109,12 +56,23 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 招聘:
   企业：信息、地址、岗位、岗位需求、薪资、福利、
 
+experience：经验
+education：教育
 
 
-
-简历：resume
-经历：experience
-学历：educationa
+intention: 工作意向 # 初次打开小程序时，先让选择工作意向。
+index: 首页
+resume: 简历
+  new: 新建简历 # 个人信息
+    intention: 求职意向 # 状态 | 职能 | 城市 | 薪资
+    education: 学历 # 学校 | 学位 | 专业 | 时间
+    experience-new: 工作经历 # 单位 | 部门 | 职位 | 时间
+  information: 简历详情
+    preview: 详情预览
+tree-select: 选择树
+  address: 地址
+  position: 职位
+user: 个人中心
 
 
 
