@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "van-search": "/static/@vant/search/index",
+    "van-row": "/static/@vant/row/index",
+    "van-col": "/static/@vant/col/index",
+    "van-grid": "/static/@vant/grid/index",
+    "van-cell": "/static/@vant/cell/index",
+    "van-cell-group": "/static/@vant/cell-group/index",
+    "van-panel": "/static/@vant/panel/index",
+    "van-tag": "/static/@vant/tag/index",
+    "van-popup": "/static/@vant/popup/index",
+    "van-button": "/static/@vant/button/index",
+    "van-overlay": "/static/@vant/overlay/index",
+    "van-grid-item": "/static/@vant/grid-item/index"
+  }
+}

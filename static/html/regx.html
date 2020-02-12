@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  .image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .image.change img {
+    left: 25px;
+    top: 25px;
+    width: 50%;
+    height: 50%;
+    transition: all ease .5s;
+  }
+  .image.active img {
+    transition: ease .5s;
+  }
+
+</style>
+<body>
+<div class="good">
+  <div class="image" id="image"><img  id="img" src="../images/user.png" alt=""></div>
+</div>
+<script>
+var imageBox = document.getElementById('image')
+var image = document.getElementById('img')
+
+imageBox.addEventListener('click', function (event) {
+  imageBox.setAttribute('class', 'image change')
+  setTimeout(() => {
+    image.setAttribute('src', '../images/qrCode.png')
+    imageBox.setAttribute('class', 'image active')
+  }, 500)
+}, false)
+</script>
+
+</body>
+</html>

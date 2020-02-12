@@ -1,0 +1,114 @@
+@import "../../main.less";
+.main {
+  padding: 0;
+  // background: #242221;
+  padding-bottom: 2rem;
+}
+
+.user-theme {
+  display: flex;
+  background-image: linear-gradient(
+    140deg,
+    rgba(64, 64, 64, .9) 0%,
+    rgba(64, 64, 64, .9) 15%,
+    rgba(52, 53, 55, .9) 15%,
+    rgba(52, 53, 55, .9) 45%,
+    rgba(48, 49, 51, .9) 45%,
+    rgba(48, 49, 51, .9) 75%,
+    rgba(52, 53, 55, .9) 75%,
+    rgba(52, 53, 55, .9) 90%,
+    rgba(58, 59, 62, .9) 90%,
+    rgba(58, 59, 62, .9) 100%
+  );
+  padding: 60rpx 40rpx;
+  .user-theme-left {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    .user-avatar {
+      width:108rpx;
+      height:108rpx;
+      /*-webkit-border-radius: 54rpx!important;*/
+      /*-moz-border-radius: 54rpx!important;*/
+      border-top-left-radius:54rpx!important;
+      border-top-right-radius:54rpx!important;
+      border-bottom-left-radius:54rpx!important;
+      border-bottom-right-radius:54rpx!important;
+      overflow:hidden;
+    }
+    .user-name {
+      color: #fafafa;
+      font-size: 36rpx;
+      padding-top: 10rpx;
+    }
+  }
+  .user-theme-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.power-container {
+  width: 100%;
+  height: 100%;
+  .power-header {
+    height: 100rpx;
+    line-height: 100rpx;
+    padding: 0 40rpx;
+    font-weight: bold;
+    font-size: 36rpx;
+  }
+  .power-body {
+    padding: 0 40rpx;
+    font-size: 36rpx;
+    .power-body-text {
+      height: 80rpx;
+      line-height: 80rpx;
+    }
+    .power-body-radio {
+      height: 80rpx;
+      line-height: 80rpx;
+    }
+  }
+  .power-footer {
+    padding: 0 40rpx;
+    text-align: center;
+    .power-button {
+      margin: 0 10rpx;
+    }
+  }
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.panel-container {
+  width: 90vw;
+  border-radius: 20rpx;
+}
+
+.panel-body {
+  text-align: center;
+  height: 200rpx;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: flex-end;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-right: 20rpx;
+  .panel-close {
+    font-size: 36rpx;
+  }
+}
+
+.panel-footer {
+  text-align: right;
+}
