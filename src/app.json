@@ -1,12 +1,16 @@
 {
   "pages": [
-    "pages/resume/new/main",
-    "pages/resume/new/intention/main",
-    "pages/resume/new/education/main",
-    "pages/resume/new/experience-new/main",
-    "pages/intention/main",
+    "pages/user/apply-record/main",
     "pages/user/main",
+    "pages/resume/preview/main",
     "pages/index/main",
+    "pages/resume/new/experience-new/main",
+    "pages/resume/new/education/main",
+    "pages/resume/new/intention/main",
+    "pages/resume/new/main",
+    "pages/find/main",
+    "pages/intention/main",
+
     "pages/tree-select/position/main",
     "pages/tree-select/address/main"
   ],
@@ -27,7 +31,20 @@
       "pagePath": "pages/index/main",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
-    }, {
+    },
+      {
+        "text": "发现",
+        "pagePath": "pages/find/main",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
+      "text": "简历",
+      "pagePath": "pages/resume/preview/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    },
+      {
       "text": "我的",
       "pagePath": "pages/user/main",
       "iconPath": "static/tabs/orders.png",
