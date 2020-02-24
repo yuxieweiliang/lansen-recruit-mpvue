@@ -12,11 +12,14 @@
       </view>
     </view>
 
-    <van-grid>
+    <van-grid clickable column-num="4">
       <van-grid-item icon="photo-o" text="刷新简历" @click="onReloadResumePanelShow"/>
       <van-grid-item icon="photo-o" text="订阅职位" @click="navigateToIntention"/>
-      <van-grid-item icon="photo-o" text="应聘记录" />
-      <van-grid-item icon="photo-o" text="职位收藏" />
+<!--          为什么跳转不过去呢？-->
+<!--      <van-grid-item icon="photo-o" text="应聘记录" @click="navigateToApplyRecord"/>-->
+<!--      <van-grid-item icon="photo-o" text="职位收藏" @click="navigateToPostCollect"/>-->
+      <van-grid-item icon="photo-o" text="应聘记录" link-type="navigateTo" url="/pages/user/apply-record/main"/>
+      <van-grid-item icon="photo-o" text="职位收藏" link-type="navigateTo" url="/pages/user/post-collect/main"/>
     </van-grid>
 
     <van-cell-group>
@@ -106,6 +109,12 @@ export default {
     },
     navigateToIntention () {
       mpvue.navigateTo({ url: `/pages/intention/main` })
+    },
+    navigateToPostCollect () {
+      mpvue.navigateTo({ url: `pages/user/post-collect/main` })
+    },
+    navigateToApplyRecord () {
+      mpvue.navigateTo({ url: `pages/user/apply-record/main` })
     },
     onClose () {
       console.log(this)

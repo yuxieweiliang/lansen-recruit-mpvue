@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "郎生",
+  "navigationBarTitleText": "发现",
   "usingComponents": {
     "van-search": "/static/@vant/search/index",
     "van-row": "/static/@vant/row/index",
@@ -9,6 +9,9 @@
     "van-cell-group": "/static/@vant/cell-group/index",
     "van-panel": "/static/@vant/panel/index",
     "van-tag": "/static/@vant/tag/index",
-    "van-grid-item": "/static/@vant/grid-item/index"
+    "van-grid-item": "/static/@vant/grid-item/index",
+    "van-tabs": "/static/@vant/tabs/index",
+    "van-tab": "/static/@vant/tab/index",
+    "van-icon": "/static/@vant/icon/index"
   }
 }

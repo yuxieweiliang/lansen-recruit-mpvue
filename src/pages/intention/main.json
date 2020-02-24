@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "意向",
+  "navigationBarTitleText": "订阅职位",
   "usingComponents": {
     "van-search": "/static/@vant/search/index",
     "van-row": "/static/@vant/row/index",
