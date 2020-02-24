@@ -1,21 +1,5 @@
 <template>
-  <main class="main">
-    <div style="position: absolute; top: 0; z-index: 9; width: 100vw">
-      <van-search value="value" placeholder="请输入搜索关键词" show-action background="transparent"/>
-    </div>
-    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true">
-      <block v-for="(item, index_banner) in banners" :key="index_banner">
-        <swiper-item>
-          <section class="banner"><img src="/static/images/banner_01.png" alt=""></section>
-        </swiper-item>
-      </block>
-    </swiper>
-
-    <van-grid clickable column-num="3">
-      <van-grid-item icon="photo-o" text="急招" link-type="navigateTo" url="/pages/index/hot-post/main"/>
-      <van-grid-item icon="photo-o" text="专场" link-type="navigateTo" url="/pages/index/special-recruitment/main"/>
-      <van-grid-item icon="photo-o" text="订阅" @click="navigateToIntention"/>
-    </van-grid>
+  <div>
     <section class="banner"><img style="height: 200rpx;" src="/static/images/banner_01.png" alt=""></section>
 
     <van-panel title="推荐职位">
@@ -63,39 +47,20 @@
 
       </div>
     </van-panel>
-  </main>
+  </div>
 </template>
-
 <script>
-export default {
-  data () {
-    return {
-      time: new Date().getDate(),
-      banners: [
-        {src: '/static/images/banner_01.png'},
-        {src: '/static/images/banner_01.png'}
-      ]
-    }
-  },
-
-  methods: {
-    routerToFrom () {
-      window.location.href = './join.html'
-      console.log(this)
+  export default {
+    data () {
+      return {}
     },
-    routerToDetails () {
-      window.location.href = './details.html'
-      console.log(this)
-    },
-    navigateToIntention () {
-      mpvue.navigateTo({ url: `/pages/intention/main` })
-    }
-  },
 
-  created () {}
-}
+    methods: {},
+
+    created () {}
+  }
 </script>
 
 <style lang="less">
-@import "./style.less";
+  @import "./style.less";
 </style>
