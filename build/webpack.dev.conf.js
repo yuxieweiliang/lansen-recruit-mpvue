@@ -18,6 +18,10 @@ var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 //   baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
 // })
 
+// 如果命令行参数中 有 NETWORK = 'MOCK'
+let { NETWORK } = process.env || {}
+const MOCK = NETWORK ? NETWORK.toString().trim() : null
+
 module.exports = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
@@ -37,7 +41,8 @@ module.exports = merge(baseWebpackConfig, {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': config.dev.env
+      'process.env': config.dev.env,
+      NETWORK: JSON.stringify(MOCK)
     }),
 
     // copy from ./webpack.prod.conf.js
@@ -60,7 +65,7 @@ module.exports = merge(baseWebpackConfig, {
         return (
           module.resource &&
           /\.js$/.test(module.resource) &&
-          module.resource.indexOf('node_modules') >= 0
+          (module.resource.indexOf('node_modules') >= 0 || module.resource.indexOf('mock') >= 0)
         ) || count > 1
       }
     }),

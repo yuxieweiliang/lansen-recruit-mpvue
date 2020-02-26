@@ -6,7 +6,7 @@
         <open-data class="user-name" type="userNickName"/>
       </view>
       <view class="user-theme-right">
-        <van-button>
+        <van-button @click="newResumeOnClick">
           新建 ›
         </van-button>
       </view>
@@ -43,7 +43,7 @@
     <van-popup :show="show" @close="onClose" position="bottom" round custom-style="height: 40%">
       <view class="power-container">
         <view class="power-header">
-          郎生网络 | 招聘求职中心 申请
+          朗生网络 | 招聘求职中心 申请
         </view>
         <view class="power-body">
           <view class="power-body-text">
@@ -105,7 +105,10 @@ export default {
       this.panel.show = false
     },
     navigateToIntention () {
-      mpvue.navigateTo({ url: `/pages/intention/main` })
+      mpvue.navigateTo({ url: `/pages/resume/intention/main` })
+    },
+    newResumeOnClick () {
+      mpvue.navigateTo({ url: `/pages/resume/new-information/main` })
     },
     onClose () {
       console.log(this)

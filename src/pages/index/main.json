@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "郎生",
+  "navigationBarTitleText": "朗生",
   "usingComponents": {
     "van-search": "/static/@vant/search/index",
     "van-row": "/static/@vant/row/index",

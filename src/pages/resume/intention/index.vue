@@ -39,7 +39,7 @@
     <van-popup :show="popup.show" @close="closePowerPopup" position="bottom" round custom-style="height: 40%">
       <view class="power-container">
         <view class="power-header">
-          郎生网络 | 招聘求职中心 申请
+          朗生网络 | 招聘求职中心 申请
         </view>
         <view class="power-body">
           <view class="power-body-text">
@@ -76,63 +76,64 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      popup: {
-        show: false
-      },
-      selectSalary: {
-        show: false,
-        columns: [
-          {
-            values: [0, '1000', '2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000'],
-            defaultIndex: 2
-          },
-          {
-            values: ['1000', '2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000', '10000'],
-            defaultIndex: 2
-          }
+  export default {
+    name: 'intention',
+    data () {
+      return {
+        popup: {
+          show: false
+        },
+        selectSalary: {
+          show: false,
+          columns: [
+            {
+              values: [0, '1000', '2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000'],
+              defaultIndex: 2
+            },
+            {
+              values: ['1000', '2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000', '10000'],
+              defaultIndex: 2
+            }
+          ]
+        },
+        banners: [
+          {src: '/static/images/banner_01.png'},
+          {src: '/static/images/banner_01.png'}
         ]
+      }
+    },
+
+    methods: {
+      showPowerPopup () {
+        this.popup.show = true
       },
-      banners: [
-        {src: '/static/images/banner_01.png'},
-        {src: '/static/images/banner_01.png'}
-      ]
-    }
-  },
+      closePowerPopup () {
+        this.popup.show = false
+      },
+      onPositionShow () {
+        mpvue.navigateTo({ url: `/pages/tree-select/position/main` })
+      },
+      onAddressShow () {
+        mpvue.navigateTo({ url: `/pages/tree-select/address/main` })
+      },
+      onSalaryShow () {
+        this.selectSalary.show = true
+      },
+      onSelectSalaryClose () {
+        this.selectSalary.show = false
+      },
+      onSelectCancel () {
+        this.selectSalary.show = false
+      },
+      onSelectConfirm () {
+        this.selectSalary.show = false
+      }
+    },
 
-  methods: {
-    showPowerPopup () {
-      this.popup.show = true
-    },
-    closePowerPopup () {
-      this.popup.show = false
-    },
-    onPositionShow () {
-      mpvue.navigateTo({ url: `/pages/position/main` })
-    },
-    onAddressShow () {
-      mpvue.navigateTo({ url: `/pages/address/main` })
-    },
-    onSalaryShow () {
-      this.selectSalary.show = true
-    },
-    onSelectSalaryClose () {
-      this.selectSalary.show = false
-    },
-    onSelectCancel () {
-      this.selectSalary.show = false
-    },
-    onSelectConfirm () {
-      this.selectSalary.show = false
-    }
-  },
-
-  created () {}
-}
+    created () {}
+  }
 </script>
 
 <style lang="less">
-@import "./style.less";
+  @import "./style.less";
 </style>

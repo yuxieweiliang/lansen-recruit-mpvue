@@ -15,13 +15,6 @@
           @blur="onUsernameBlur"
         />
 
-        <LsRadioGroup
-          title="性别"
-          :data="dataSource.gander"
-          :defaultValue="data.gander"
-          @change="onGanderChange"
-        />
-
         <van-cell
           title="出生日期"
           is-link
@@ -96,13 +89,8 @@
 </template>
 
 <script>
-  import LsRadioGroup from './LsRadioGroup'
-
   export default {
-    name: 'new',
-    components: {
-      LsRadioGroup
-    },
+    name: 'resume-preview',
     data () {
       return {
         dataSource: { },
@@ -118,7 +106,7 @@
 
       onClickNextBtn ({ target }) {
         console.log('-------')
-        mpvue.navigateTo({ url: `/pages/resume/new/intention/main` })
+        mpvue.navigateTo({ url: `/pages/resume-new/intention/main` })
       }
     },
 
@@ -127,5 +115,5 @@
 </script>
 
 <style lang="less">
-@import "./style.less";
+  @import "./style.less";
 </style>

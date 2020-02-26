@@ -28,6 +28,7 @@ module.exports = {
   },
   globals: {
     App: true,
+    NETWORK: true,
     Page: true,
     wx: true,
     swan: true,

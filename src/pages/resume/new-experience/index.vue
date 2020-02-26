@@ -80,16 +80,16 @@
     </form>
 
     <view class="resume-footer">
-      <van-button type="info" round size="large">完成创建</van-button>
+      <van-button type="info" round size="large" @click="onClickNav">完成创建</van-button>
     </view>
   </main>
 </template>
 
 <script>
-  import LsRadioGroup from '../LsRadioGroup'
+  import LsRadioGroup from '../../../components/LsRadioGroup'
 
   export default {
-    name: 'resume-new',
+    name: 'resume-new-experience',
     components: {
       LsRadioGroup
     },
@@ -103,7 +103,7 @@
 
     methods: {
       onClickNav ({ target }) {
-        mpvue.navigateTo({ url: `/pages/information/main` })
+        mpvue.switchTab({ url: `/pages/resume/main` })
       },
 
       onClickItem ({ target }) { }
@@ -112,7 +112,3 @@
     created () { }
   }
 </script>
-
-<style lang="less">
-  @import "../style.less";
-</style>
