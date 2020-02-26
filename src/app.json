@@ -1,5 +1,17 @@
 {
   "pages": [
+    "pages/user/post-collect/main",
+    "pages/find/main",
+    "pages/find/find-detail/main",
+    "pages/user/apply-record/main",
+    "pages/index/post-details/main",
+    "pages/index/hot-post/main",
+    "pages/index/special-recruitment/main",
+    
+
+
+
+
     "pages/resume/recruit-details/main",
     "pages/resume/new-project-experience/main",
     "pages/resume/new-evaluate/main",
