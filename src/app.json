@@ -1,12 +1,20 @@
 {
   "pages": [
-    "pages/resume/new/main",
-    "pages/resume/new/experience-new/main",
-    "pages/resume/new/education/main",
-    "pages/resume/new/intention/main",
-    "pages/intention/main",
+    "pages/resume/recruit-details/main",
+    "pages/resume/new-project-experience/main",
+    "pages/resume/new-evaluate/main",
+    "pages/resume/main",
+    "pages/resume/intention/main",
+    "pages/resume/new-information/main",
+    "pages/resume/new-experience/main",
+    "pages/resume/new-education/main",
+    "pages/resume/new-intention/main",
+    "pages/resume/preview/main",
+
     "pages/user/main",
+
     "pages/index/main",
+
     "pages/tree-select/position/main",
     "pages/tree-select/address/main"
   ],
@@ -28,23 +36,21 @@
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
+      "text": "简历",
+      "pagePath": "pages/resume/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    }, {
       "text": "我的",
       "pagePath": "pages/user/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }],
-
-    "items": [{
-      "name": "首页",
-      "pagePath": "pages/index/main",
-      "icon": "static/tabs/home.png",
-      "activeIcon": "static/tabs/home-active.png"
-    }, {
-      "name": "订单",
-      "pagePath": "pages/user/main",
-      "icon": "static/tabs/orders.png",
-      "activeIcon": "static/tabs/orders-active.png"
-    }],
     "position": "bottom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置将用于小程序位置接口的效果展示"
+    }
   }
 }

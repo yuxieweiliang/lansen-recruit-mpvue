@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <div style="position: absolute; top: 0; z-index: 9; width: 100vw">
-      <van-search value="value" placeholder="请输入搜索关键词" show-action background="transparent"/>
+      <van-search placeholder="请输入搜索关键词" background="transparent"/>
     </div>
     <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true">
       <block v-for="(item, index_banner) in banners" :key="index_banner">
@@ -37,7 +37,7 @@
             <van-tag plain type="danger">带薪年假</van-tag>
           </van-row>
           <van-row class="address">
-            西安市郎生网络科技有限公司
+            西安市朗生网络科技有限公司
           </van-row>
         </div>
         <div class="recruit-item">
@@ -57,7 +57,7 @@
             <van-tag plain type="danger">带薪年假</van-tag>
           </van-row>
           <van-row class="address">
-            西安市郎生网络科技有限公司
+            西安市朗生网络科技有限公司
           </van-row>
         </div>
 

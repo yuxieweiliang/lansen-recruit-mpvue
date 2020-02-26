@@ -1,0 +1,25 @@
+{
+  "navigationBarTitleText": "自我评价",
+  "usingComponents": {
+    "van-area": "/static/@vant/area/index",
+    "van-action-sheet": "/static/@vant/action-sheet/index",
+    "van-button": "/static/@vant/button/index",
+    "van-col": "/static/@vant/col/index",
+    "van-cell": "/static/@vant/cell/index",
+    "van-cell-group": "/static/@vant/cell-group/index",
+    "van-collapse": "/static/@vant/collapse/index",
+    "van-collapse-item": "/static/@vant/collapse-item/index",
+    "van-dialog": "/static/@vant/dialog/index",
+    "van-dropdown-menu": "/static/@vant/dropdown-menu/index",
+    "van-dropdown-item": "/static/@vant/dropdown-item/index",
+    "van-datetime-picker": "/static/@vant/datetime-picker/index",
+    "van-field": "/static/@vant/field/index",
+    "van-picker": "/static/@vant/picker/index",
+    "van-popup": "/static/@vant/popup/index",
+    "van-tree-select": "/static/@vant/tree-select/index",
+    "van-toast": "/static/@vant/toast/index",
+    "van-row": "/static/@vant/row/index",
+    "van-radio": "/static/@vant/radio/index",
+    "van-radio-group": "/static/@vant/radio-group/index"
+  }
+}

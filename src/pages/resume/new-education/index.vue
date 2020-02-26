@@ -55,10 +55,10 @@
 </template>
 
 <script>
-  import LsRadioGroup from '../LsRadioGroup'
+  import LsRadioGroup from '../../../components/LsRadioGroup'
 
   export default {
-    name: 'resume-new',
+    name: 'resume-new-education',
     components: {
       LsRadioGroup
     },
@@ -72,7 +72,7 @@
 
     methods: {
       onClickNextBtn ({ target }) {
-        mpvue.navigateTo({ url: `/pages/resume/new/experience-new/main` })
+        mpvue.navigateTo({ url: `/pages/resume/new-experience/main` })
       },
 
       onClickItem ({ target }) { }
@@ -81,7 +81,3 @@
     created () { }
   }
 </script>
-
-<style lang="less">
-  @import "../style.less";
-</style>

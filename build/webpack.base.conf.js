@@ -24,9 +24,13 @@ function getEntry (rootSrc) {
    return map;
 }
 
+// 添加 MOCK JS 虚假数据接口
+const mock = { mock: resolve('./mock/index.js') }
+
 const appEntry = { app: resolve('./src/main.js') }
 const pagesEntry = getEntry(resolve('./src'), 'pages/**/main.js')
-const entry = Object.assign({}, appEntry, pagesEntry)
+const pagesEntry2 = getEntry(resolve('./src'), 'pages/**/**/main.js')
+const entry = Object.assign({}, appEntry, pagesEntry, pagesEntry2, mock)
 
 let baseWebpackConfig = {
   // 如果要自定义生成的 dist 目录里面的文件路径，

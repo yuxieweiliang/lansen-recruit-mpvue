@@ -5245,8 +5245,8 @@ export default [
             "label": "广德县"
           },
           {
-            "value": "郎溪县",
-            "label": "郎溪县"
+            "value": "朗溪县",
+            "label": "朗溪县"
           },
           {
             "value": "泾县",

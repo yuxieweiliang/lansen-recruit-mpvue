@@ -19,12 +19,14 @@
     "start:my": "npm run dev:my",
     "build:my": "node build/build.js my",
     "dev": "node build/dev-server.js wx",
+    "dev:mock": "set NETWORK=MOCK && node build/dev-server.js wx",
     "start": "npm run dev",
     "build": "node build/build.js wx",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "@vant/weapp": "^1.0.3",
+    "mockjs": "^1.0.1-beta3",
     "mpvue": "^2.0.0"
   },
   "devDependencies": {
