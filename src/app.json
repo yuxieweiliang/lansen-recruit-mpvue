@@ -1,16 +1,12 @@
 {
   "pages": [
-    "pages/user/post-collect/main",
-    "pages/find/main",
-    "pages/find/find-detail/main",
-    "pages/user/apply-record/main",
+    "pages/index/main",
     "pages/index/post-details/main",
     "pages/index/hot-post/main",
     "pages/index/special-recruitment/main",
-    
 
-
-
+    "pages/find/main",
+    "pages/find/find-detail/main",
 
     "pages/resume/recruit-details/main",
     "pages/resume/new-project-experience/main",
@@ -24,8 +20,8 @@
     "pages/resume/preview/main",
 
     "pages/user/main",
-
-    "pages/index/main",
+    "pages/user/post-collect/main",
+    "pages/user/apply-record/main",
 
     "pages/tree-select/position/main",
     "pages/tree-select/address/main"
